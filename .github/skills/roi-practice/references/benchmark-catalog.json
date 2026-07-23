@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "benchmarks": [
+    {
+      "id": "benchmark-01-m365-scale",
+      "industry": "professional-services",
+      "persona": "CFO",
+      "decision": "2,000席のMicrosoft 365 Copilotを全社展開するか",
+      "facts": ["パイロット200名", "週次アクティブ率58%", "自己申告の週平均削減2.4時間", "年間稼働46週"],
+      "hiddenEvents": ["削減時間のうち残業削減へ結び付いた証拠はまだない", "翌年度予算は20%削減"],
+      "requiredTradeoffs": ["実現率", "対象者選別", "変更管理", "Copilot Analyticsによる測定"],
+      "lanes": ["Adopt", "GovernAndMeasure"],
+      "targetCompetencies": ["roiAndTco", "assumptionsAndMeasurement", "executiveRecommendation"]
+    },
+    {
+      "id": "benchmark-02-build-vs-extend",
+      "industry": "manufacturing",
+      "persona": "CIO",
+      "decision": "保守AgentをCopilot Studioで拡張するかFoundryで独自構築するか",
+      "facts": ["技術者1,500名", "年間停止損失12億円", "資料はSharePoint、履歴はSAP", "PoC予算4,000万円"],
+      "hiddenEvents": ["SharePointの15%が広範共有", "安全手順の誤答がPoCで2件発生"],
+      "requiredTradeoffs": ["導入速度と制御", "安全性", "データ整備", "撤退条件"],
+      "lanes": ["Extend", "Build", "GovernAndMeasure"],
+      "targetCompetencies": ["businessOutcome", "riskAndGovernance", "industryTransformation"]
+    },
+    {
+      "id": "benchmark-03-github-copilot",
+      "industry": "financial-services",
+      "persona": "CTO",
+      "decision": "GitHub Copilotを1,200名の開発者へ展開するか",
+      "facts": ["パイロット120名", "PR作成時間18%短縮", "レビュー時間は変化なし", "変更失敗率が8%から9%へ変化"],
+      "hiddenEvents": ["パイロット参加は希望者のみ", "主要規制システムはパイロット対象外"],
+      "requiredTradeoffs": ["選択バイアス", "速度と品質", "対象システム別展開", "開発者体験"],
+      "lanes": ["Adopt", "GovernAndMeasure"],
+      "targetCompetencies": ["assumptionsAndMeasurement", "riskAndGovernance", "executiveRecommendation"]
+    },
+    {
+      "id": "benchmark-04-customer-agent",
+      "industry": "retail",
+      "persona": "CEO",
+      "decision": "顧客向けAgentを繁忙期前に公開するか",
+      "facts": ["年間問い合わせ600万件", "平均処理費650円", "PoC自己解決率42%", "誤回答率3.5%"],
+      "hiddenEvents": ["返品規約の誤回答がSNSで拡散", "有人窓口の削減契約はまだ変更できない"],
+      "requiredTradeoffs": ["売上とブランド", "現金便益", "有人切替", "段階公開"],
+      "lanes": ["Extend", "Build", "GovernAndMeasure"],
+      "targetCompetencies": ["businessOutcome", "roiAndTco", "riskAndGovernance"]
+    },
+    {
+      "id": "benchmark-05-agent-portfolio",
+      "industry": "conglomerate",
+      "persona": "CISO",
+      "decision": "全社87件のAgent PoCをどう統制し投資配分するか",
+      "facts": ["本番稼働9件", "重複ユースケース21件", "月間推論費は部門別で集計不能", "重大事故は未発生"],
+      "hiddenEvents": ["外部公開Agentが未承認コネクタを使用", "事業部は中央審査が遅いと反発"],
+      "requiredTradeoffs": ["速度と統制", "リスク分類", "Agent台帳", "段階別投資ゲート"],
+      "lanes": ["Extend", "Build", "GovernAndMeasure"],
+      "targetCompetencies": ["riskAndGovernance", "industryTransformation", "executiveRecommendation"]
+    },
+    {
+      "id": "benchmark-06-no-go",
+      "industry": "insurance",
+      "persona": "COO",
+      "decision": "定型請求照合へ生成AI Agentを採用するか",
+      "facts": ["年間80万件", "96%は固定ルールで処理可能", "既存RPAの誤処理率0.2%", "例外処理は有資格者が担当"],
+      "hiddenEvents": ["経営会議はAI施策の目玉を求めている", "既存RPA更新費はAgent案の3分の1"],
+      "requiredTradeoffs": ["AIを使わない判断", "機会費用", "例外だけの支援", "経営期待への説明"],
+      "lanes": ["Build", "Defer", "No-Go"],
+      "targetCompetencies": ["businessOutcome", "roiAndTco", "executiveRecommendation"]
+    }
+  ]
+}

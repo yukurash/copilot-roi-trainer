@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "templates": [
+    {
+      "id": "manufacturing-field-service",
+      "industry": "manufacturing",
+      "process": "設備保守と技能継承",
+      "businessProblem": "熟練者退職により平均復旧時間と教育期間が悪化",
+      "decision": "M365 Copilot、Copilot Studio、Foundryによる保守Agentのどこまでを採用するか",
+      "lanes": ["Adopt", "Extend", "Build", "GovernAndMeasure"],
+      "personas": ["CIO", "CFO", "COO", "CISO"],
+      "metrics": ["平均復旧時間", "初回解決率", "教育期間", "停止損失"],
+      "complications": ["SharePointの過剰共有", "SAP連携", "誤手順の安全影響"]
+    },
+    {
+      "id": "manufacturing-quality",
+      "industry": "manufacturing",
+      "process": "品質異常の分析と是正",
+      "businessProblem": "不良原因の特定が属人化し再発率が高い",
+      "decision": "生成AI、分析AI、既存BIのどれへ投資するか",
+      "lanes": ["Build", "GovernAndMeasure", "Defer"],
+      "personas": ["COO", "CFO", "CIO"],
+      "metrics": ["不良率", "原因特定時間", "廃棄原価"],
+      "complications": ["学習データ不足", "説明可能性", "既存Fabric投資"]
+    },
+    {
+      "id": "manufacturing-rfp",
+      "industry": "manufacturing",
+      "process": "技術提案とRFP回答",
+      "businessProblem": "提案作成が遅く大型案件の応札率が低い",
+      "decision": "Microsoft 365 Copilotと提案Agentの段階導入を決める",
+      "lanes": ["Adopt", "Extend", "GovernAndMeasure"],
+      "personas": ["CEO", "CFO", "CIO"],
+      "metrics": ["提案作成時間", "応札率", "受注率", "粗利"],
+      "complications": ["輸出管理情報", "効果の因果分離", "営業の利用抵抗"]
+    },
+    {
+      "id": "financial-advisor",
+      "industry": "financial-services",
+      "process": "営業担当者の顧客面談準備",
+      "businessProblem": "情報収集に時間がかかり顧客接点が減少",
+      "decision": "M365 Copilot、Dynamics 365、独自Agentを比較する",
+      "lanes": ["Adopt", "Extend", "GovernAndMeasure"],
+      "personas": ["CIO", "CFO", "CISO"],
+      "metrics": ["面談準備時間", "顧客接点数", "預かり資産", "適合性違反"],
+      "complications": ["規制対象コミュニケーション", "記録保持", "人間の承認"]
+    },
+    {
+      "id": "financial-claims",
+      "industry": "insurance",
+      "process": "保険金請求の受付と査定支援",
+      "businessProblem": "処理期間が長く顧客満足度と事務費が悪化",
+      "decision": "Document IntelligenceとAgentによる自動化範囲を決める",
+      "lanes": ["Build", "GovernAndMeasure"],
+      "personas": ["COO", "CFO", "CISO"],
+      "metrics": ["処理日数", "自動処理率", "誤査定率", "事務費"],
+      "complications": ["高影響判断", "不正検知との分離", "異議申立て"]
+    },
+    {
+      "id": "financial-compliance",
+      "industry": "financial-services",
+      "process": "規制照会とコンプライアンス調査",
+      "businessProblem": "規制文書の増加に調査要員が追いつかない",
+      "decision": "検索拡張AgentのPoC可否と統制を決める",
+      "lanes": ["Extend", "Build", "GovernAndMeasure"],
+      "personas": ["CISO", "CIO", "CFO"],
+      "metrics": ["調査時間", "引用精度", "見逃し率", "外部委託費"],
+      "complications": ["根拠提示", "法的助言との境界", "データ所在"]
+    },
+    {
+      "id": "retail-contact-center",
+      "industry": "retail",
+      "process": "顧客問い合わせ対応",
+      "businessProblem": "繁忙期の待ち時間と離職率が高い",
+      "decision": "Dynamics 365、Copilot Studio、独自顧客Agentの投資順を決める",
+      "lanes": ["Adopt", "Extend", "Build"],
+      "personas": ["COO", "CFO", "CIO"],
+      "metrics": ["平均処理時間", "一次解決率", "顧客満足度", "離職率"],
+      "complications": ["季節性", "有人切替", "ブランド毀損"]
+    },
+    {
+      "id": "retail-merchandising",
+      "industry": "retail",
+      "process": "商品企画と販促制作",
+      "businessProblem": "チャネル別コンテンツ制作が商品投入を遅らせる",
+      "decision": "M365 Copilotと生成AI制作基盤の投資価値を判断する",
+      "lanes": ["Adopt", "Build", "GovernAndMeasure"],
+      "personas": ["CEO", "CMO", "CFO"],
+      "metrics": ["市場投入期間", "制作費", "転換率", "ブランド違反率"],
+      "complications": ["著作権", "ブランド統制", "売上寄与の測定"]
+    },
+    {
+      "id": "retail-store-operations",
+      "industry": "retail",
+      "process": "店舗運営と従業員支援",
+      "businessProblem": "手順検索と新人教育が店長へ集中",
+      "decision": "Teams内Agentを全店展開するか判断する",
+      "lanes": ["Extend", "GovernAndMeasure", "No-Go"],
+      "personas": ["COO", "CFO", "CIO"],
+      "metrics": ["教育時間", "店長問い合わせ件数", "手順違反", "利用率"],
+      "complications": ["非正規従業員のID", "古い手順書", "端末不足"]
+    },
+    {
+      "id": "healthcare-clinical-documentation",
+      "industry": "healthcare",
+      "process": "診療文書作成支援",
+      "businessProblem": "文書業務が医療従事者の負担と離職を増やす",
+      "decision": "AI支援の対象範囲と人間の確認を決める",
+      "lanes": ["Adopt", "Build", "GovernAndMeasure"],
+      "personas": ["CEO", "CIO", "CISO"],
+      "metrics": ["文書時間", "修正率", "診療時間", "離職意向"],
+      "complications": ["高機微データ", "誤記録", "臨床判断との分離"]
+    },
+    {
+      "id": "healthcare-patient-access",
+      "industry": "healthcare",
+      "process": "予約と患者案内",
+      "businessProblem": "電話待ちと予約未完了が患者体験を悪化",
+      "decision": "Copilot Studioによる患者向けAgentのGo/No-Goを決める",
+      "lanes": ["Extend", "Build", "No-Go"],
+      "personas": ["COO", "CFO", "CISO"],
+      "metrics": ["待ち時間", "自己解決率", "予約完了率", "誤案内率"],
+      "complications": ["緊急症状", "多言語", "本人確認"]
+    },
+    {
+      "id": "public-casework",
+      "industry": "public-sector",
+      "process": "申請審査の職員支援",
+      "businessProblem": "制度複雑化により処理遅延と問い合わせが増加",
+      "decision": "職員向けAgentのPoCと説明責任を設計する",
+      "lanes": ["Extend", "Build", "GovernAndMeasure"],
+      "personas": ["CIO", "CFO", "CISO"],
+      "metrics": ["処理日数", "差戻し率", "問い合わせ件数", "不服申立て"],
+      "complications": ["行政判断の公平性", "記録公開", "調達制約"]
+    },
+    {
+      "id": "public-knowledge-worker",
+      "industry": "public-sector",
+      "process": "文書作成と会議業務",
+      "businessProblem": "定型業務が政策立案時間を圧迫",
+      "decision": "M365 Copilotの対象者と展開条件を決める",
+      "lanes": ["Adopt", "GovernAndMeasure"],
+      "personas": ["CIO", "CFO", "CISO"],
+      "metrics": ["文書作成時間", "会議時間", "利用率", "政策業務時間"],
+      "complications": ["秘密区分", "効果の現金化", "組織横断権限"]
+    },
+    {
+      "id": "software-development",
+      "industry": "software",
+      "process": "ソフトウェア開発",
+      "businessProblem": "開発リードタイムと技術的負債が競争力を低下",
+      "decision": "GitHub Copilotの全社展開と効果測定を決める",
+      "lanes": ["Adopt", "GovernAndMeasure"],
+      "personas": ["CTO", "CFO", "CISO"],
+      "metrics": ["リードタイム", "変更失敗率", "レビュー時間", "開発者満足度"],
+      "complications": ["コード品質", "席数と利用率", "既存改革との因果分離"]
+    },
+    {
+      "id": "software-support-agent",
+      "industry": "software",
+      "process": "技術サポート",
+      "businessProblem": "製品複雑化により解決時間とエスカレーションが増加",
+      "decision": "サポートAgentをCopilot StudioかFoundryで構築するか決める",
+      "lanes": ["Extend", "Build", "GovernAndMeasure"],
+      "personas": ["COO", "CTO", "CFO"],
+      "metrics": ["解決時間", "一次解決率", "エスカレーション率", "推論費"],
+      "complications": ["多製品データ", "回答評価", "顧客別権限"]
+    },
+    {
+      "id": "cross-industry-security-operations",
+      "industry": "cross-industry",
+      "process": "セキュリティ運用",
+      "businessProblem": "アラート過多と人材不足で重大事象の調査が遅延",
+      "decision": "Security Copilotと自動化Agentの権限範囲を決める",
+      "lanes": ["Adopt", "Extend", "GovernAndMeasure"],
+      "personas": ["CISO", "CIO", "CFO"],
+      "metrics": ["平均検知時間", "平均対応時間", "誤検知処理", "重大事故"],
+      "complications": ["自動封じ込め", "監査証跡", "効果の反実仮想"]
+    },
+    {
+      "id": "cross-industry-agent-platform",
+      "industry": "cross-industry",
+      "process": "全社Agentポートフォリオ管理",
+      "businessProblem": "部門PoCが乱立し費用とリスクが見えない",
+      "decision": "Copilot StudioとFoundryの標準、CoE、投資ゲートを定める",
+      "lanes": ["Extend", "Build", "GovernAndMeasure"],
+      "personas": ["CEO", "CIO", "CFO", "CISO"],
+      "metrics": ["本番化率", "再利用率", "Agent単位原価", "重大インシデント"],
+      "complications": ["Agent sprawl", "中央統制と現場速度", "サンクコスト"]
+    },
+    {
+      "id": "cross-industry-no-go",
+      "industry": "cross-industry",
+      "process": "請求書の定型照合",
+      "businessProblem": "手作業コストを削減したいが処理ルールは安定している",
+      "decision": "生成AI Agent、従来型自動化、現状維持を比較する",
+      "lanes": ["Build", "Defer", "No-Go"],
+      "personas": ["CFO", "CIO", "COO"],
+      "metrics": ["処理単価", "例外率", "誤処理率", "保守費"],
+      "complications": ["既存RPA", "AIの追加費用", "差別化価値なし"]
+    }
+  ]
+}

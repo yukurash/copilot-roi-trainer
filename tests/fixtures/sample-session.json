@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "sessionId": "test-session-001",
+  "startedAt": "2026-07-23T10:00:00Z",
+  "completedAt": "2026-07-23T10:10:00Z",
+  "mode": "practice",
+  "scenario": {
+    "scenarioId": "test-manufacturing",
+    "sourceTemplateId": "manufacturing-field-service",
+    "industry": "manufacturing",
+    "persona": "CFO",
+    "capabilityLanes": ["Adopt", "GovernAndMeasure"],
+    "targetCompetency": "roiAndTco",
+    "observableBehavior": "採用率と実現率を含める"
+  },
+  "transcript": [
+    { "speaker": "learner", "turn": 1, "text": "停止損失の削減を目的に、限定パイロットで実現率を測定します。" },
+    { "speaker": "executive", "turn": 1, "text": "削減時間はどのように財務価値へ変換しますか。" }
+  ],
+  "selfReflection": {
+    "wentWell": "経営成果から始めた",
+    "stuckOn": "TCOを網羅できなかった",
+    "wouldChange": "変更管理費を含める"
+  },
+  "evaluation": {
+    "scores": {
+      "businessOutcome": { "score": 3, "evidence": "停止損失の削減", "gap": "目標値がない" },
+      "roiAndTco": { "score": 2, "evidence": "実現率", "gap": "TCOがない" },
+      "assumptionsAndMeasurement": { "score": 3, "evidence": "限定パイロット", "gap": "比較方法がない" },
+      "riskAndGovernance": { "score": 1, "evidence": "証拠なし", "gap": "データ統制がない" },
+      "industryTransformation": { "score": 2, "evidence": "停止損失", "gap": "業務再設計がない" },
+      "executiveRecommendation": { "score": 1, "evidence": "限定パイロット", "gap": "意思決定依頼がない" }
+    },
+    "overall": 2.0,
+    "criticalIssues": []
+  },
+  "reflection": {
+    "previousFocusObserved": true,
+    "bottleneckCompetency": "executiveRecommendation",
+    "bottleneckReason": "提案の承認事項が不明確",
+    "nextBehavior": "回答の最後に、承認してほしい予算・対象・期間を1文で示す",
+    "transferConstraint": "次回は金融業界で再試験",
+    "improvedAnswer": "停止損失削減の仮説を8週間で検証するため、対象100名とPoC予算の承認をお願いします。",
+    "recurringWeaknesses": ["意思決定依頼が曖昧"],
+    "masteredBehaviors": ["経営成果から回答を始める"]
+  }
+}
