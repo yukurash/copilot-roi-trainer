@@ -109,7 +109,11 @@ function Add-CoverageCount {
 }
 
 Add-CoverageCount $profile.coverage.industries $session.scenario.industry
+Add-CoverageCount $profile.coverage.businessFunctions $session.scenario.businessFunction
 Add-CoverageCount $profile.coverage.personas $session.scenario.persona
+foreach ($technologyArea in $session.scenario.technologyAreas) {
+    Add-CoverageCount $profile.coverage.technologyAreas $technologyArea
+}
 foreach ($lane in $session.scenario.capabilityLanes) {
     Add-CoverageCount $profile.coverage.capabilityLanes $lane
 }

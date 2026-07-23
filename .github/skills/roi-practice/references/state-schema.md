@@ -13,7 +13,9 @@
     "scenarioId": "scenario-id",
     "sourceTemplateId": "template-id",
     "industry": "manufacturing",
+    "businessFunction": "field service",
     "persona": "CFO",
+    "technologyAreas": ["Microsoft 365 Copilot", "Copilot Studio and Microsoft 365 agents"],
     "capabilityLanes": ["Adopt", "GovernAndMeasure"],
     "targetCompetency": "roiAndTco",
     "observableBehavior": "採用率と実現率を含める"
