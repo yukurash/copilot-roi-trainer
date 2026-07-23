@@ -1,0 +1,4 @@
+.roi-trainer/active-session.json
+.roi-trainer/sessions/
+.roi-trainer/exports/
+*.tmp

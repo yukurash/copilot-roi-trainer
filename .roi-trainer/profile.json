@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "learner": {
+    "displayName": "",
+    "startedAt": null
+  },
+  "sessionCount": 0,
+  "competencies": {
+    "businessOutcome": { "average": null, "attempts": 0 },
+    "roiAndTco": { "average": null, "attempts": 0 },
+    "assumptionsAndMeasurement": { "average": null, "attempts": 0 },
+    "riskAndGovernance": { "average": null, "attempts": 0 },
+    "industryTransformation": { "average": null, "attempts": 0 },
+    "executiveRecommendation": { "average": null, "attempts": 0 }
+  },
+  "recurringWeaknesses": [],
+  "masteredBehaviors": [],
+  "nextFocus": {
+    "competency": "businessOutcome",
+    "behavior": "回答の冒頭で、製品ではなく経営成果と意思決定事項を示す"
+  },
+  "coverage": {
+    "industries": {},
+    "personas": {},
+    "capabilityLanes": {}
+  },
+  "benchmarkHistory": [],
+  "updatedAt": null
+}
