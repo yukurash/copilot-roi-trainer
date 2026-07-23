@@ -8,7 +8,9 @@
 {
   "mode": "practice",
   "durationMinutes": 8,
+  "requestedTechnologyAreas": ["Copilot Studio and Microsoft 365 agents"],
   "requestedIndustry": null,
+  "requestedBusinessFunction": "customer service",
   "requestedPersona": null,
   "nextFocus": {
     "competency": "businessOutcome",
@@ -24,6 +26,19 @@
   "recentScenarioIds": []
 }
 ```
+
+`requestedTechnologyAreas`と、`requestedIndustry`または`requestedBusinessFunction`の少なくとも一方は、受講者へ確認した値を設定する。受講者が明示的に「おまかせ」を選んだ項目だけ`null`または空配列にできる。
+
+技術エリアは次の正規化名を基本とし、自由指定された場合は原文も保持する。
+
+- `Microsoft 365 Copilot`
+- `GitHub Copilot`
+- `Security Copilot`
+- `Copilot Studio and Microsoft 365 agents`
+- `Microsoft Foundry and custom AI`
+- `Azure AI services`
+- `Governance and measurement`
+- `Cross-portfolio`
 
 ## 選択配分
 
@@ -65,7 +80,9 @@
   },
   "coverage": {
     "industry": "manufacturing",
+    "businessFunction": "field service",
     "persona": "CFO",
+    "technologyAreas": ["Microsoft 365 Copilot", "Copilot Studio and Microsoft 365 agents"],
     "capabilityLanes": ["Adopt", "Extend", "GovernAndMeasure"]
   },
   "sourceTemplateId": "manufacturing-field-service"
@@ -75,6 +92,7 @@
 ## 品質ゲート
 
 - 製品名を除いても経営ケースとして成立すること。
+- `requestedTechnologyAreas`と、指定された業界・業務領域にケースが合致すること。
 - 少なくとも2つの合理的な選択肢があること。
 - 不足情報と仮定を区別できること。
 - 受講者がROI、リスク、導入ロードマップの全てを議論できること。
